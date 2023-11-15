@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test_Site</title>
+
+    <link rel="stylesheet" href="main.css">
+  
+</head>
+<body>
+    <div class="generator">
+        <h1>
+            팀 추첨기
+        </h1>
+        <form id="form">
+          <div>
+            <label class="method-label method-2" for="teams-labels">Teams' Names</label>
+            <p>one per line or comma separated</p>
+            <textarea id="teams-labels" cols="20" rows="2" name="teams-labels" autofocus>RED, BLUE</textarea>            
+          </div>
+          <div class="members">
+            <label for="teams-members">Members' Names</label>
+            <p>one per line or comma separated</p>
+            <textarea id="teams-members" cols="20" rows="5" name="teams-members">Name1, Name2, Name3, Name4, Name5, Name6, Name7, Name8, Name9, Name10</textarea>
+          </div>
+          <button type="submit" id="submit" class="submit">Go!</button>
+        </form>
+        <div class="results" id="results">
+          <div class="finalteams" id="finalteams"></div>
+          <button class="copy" type="button" id="copy">copy</button>
+        </div>
+      </div>
+      
+
+      <script src="./index.js"> </script>
+</body>
+</html>
